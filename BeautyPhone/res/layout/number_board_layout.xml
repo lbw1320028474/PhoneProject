@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="4dp" />
+
+    <LinearLayout
+        android:id="@+id/numberboard_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:translationZ="5dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxs"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_xxl"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="@dimen/text_size_xxl"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxs"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textSize="@dimen/text_size_xxl"
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxs"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxs"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_numberx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:textSize="@dimen/text_size_xxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_number0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/text_size_xxl"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_numberj"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="@dimen/text_size_xxl"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxs"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/number_board_close" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_call_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/number_board_callbutton_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/call_button_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:id="@+id/numberboard_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/number_board_delete" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/space_xxxs"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/contactinfomation_phone_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/contactinfomation_phone_imageicon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/infomation_phoneicon" />
+
+        <LinearLayout
+            android:id="@+id/infomationphoneitem_adjustlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/contactinfomation_phone_imageicon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contactinfomation_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="13765511314"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/contactinfomation_phone_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactinfomation_phone_number"
+                android:layout_below="@+id/contactinfomation_phone_number"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:text="手机（中国移动)"
+                android:textColor="#c8c8c8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactinfomation_sendmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="发消息"
+            android:textColor="#375bd0"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignLeft="@+id/infomationphoneitem_adjustlayout"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c8c8" />
+    </RelativeLayout>
+
+</LinearLayout>

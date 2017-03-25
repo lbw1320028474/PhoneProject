@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/grant_money_rootview"
+        android:layout_width="200dp"
+        android:layout_height="250dp" >
+
+        <ImageView
+            android:id="@+id/grant_money_dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/grant_money_userconver"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/grant_money_bg_style"
+            android:scaleType="fitXY"
+            android:src="@drawable/grant_money_dialog_bg" />
+
+        <ImageView
+            android:id="@+id/grant_money_userconver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/conver_read" />
+
+        <Button
+            android:id="@+id/grant_money_payMoney"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/grant_money_dialog_bg"
+            android:layout_alignLeft="@+id/grant_money_dialog_bg"
+            android:layout_alignRight="@+id/grant_money_dialog_bg"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/grant_money_button_bg"
+            android:gravity="center"
+            android:text="赏红包"
+            android:textColor="#eb4455" />
+
+        <LinearLayout
+            android:id="@+id/moneyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/grant_money_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:minWidth="40dp"
+                android:text="1.00"
+                android:textColor="#f1bc78"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="元"
+                android:textColor="#f1bc78"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/grant_money_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grant_money_userconver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="吴明生"
+            android:textColor="#fffff0" />
+
+        <ImageButton
+            android:id="@+id/grant_money_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/grant_money_dialog_bg"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/grant_money_close" />
+
+        <TextView
+            android:id="@+id/grant_money_editmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moneyTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="修改金额"
+            android:textColor="#f1bc78"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

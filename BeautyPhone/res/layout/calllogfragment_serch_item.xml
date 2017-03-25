@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calllogfragment_serch_mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/recycleview_item_click_bg" >
+
+    <ImageView
+        android:id="@+id/calllogfragment_serch_peoplevonver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/converimagegroud"
+        android:src="@drawable/conver_blue" />
+
+    <TextView
+        android:id="@+id/calllogfragment_serch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_s"
+        android:layout_toRightOf="@+id/calllogfragment_serch_peoplevonver"
+        android:text="莉莉丝塔"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_l" />
+
+    <TextView
+        android:id="@+id/calllogfragment_serch_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calllogfragment_serch_name"
+        android:layout_marginLeft="@dimen/space_s"
+        android:layout_marginTop="@dimen/space_xms"
+        android:layout_toRightOf="@+id/calllogfragment_serch_peoplevonver"
+        android:text="浙江杭州 联通"
+        android:textColor="@color/normel_text_color"
+        android:textSize="@dimen/text_size_ms" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="@dimen/space_s"
+        android:background="#c8c8c8" />
+
+    <ImageView
+        android:id="@+id/calllogfragment_serch_number_ifomationiconbutton"
+        android:layout_width="@dimen/space_xxl"
+        android:layout_height="@dimen/space_xxl"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_s"
+        android:src="@drawable/ic_information_normal" />
+
+    <TextView
+        android:id="@+id/calllogfragment_serch_friendtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/calllogfragment_serch_number_ifomationiconbutton"
+        android:text="美天好友"
+        android:textColor="#1388ea"
+        android:textSize="@dimen/text_size_ms"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/loading_dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_dialog_bg"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram1" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/loading_dialog_1"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram2" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/loading_dialog_2"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram3" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/loading_dialog_3"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram4" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/loading_dialog_1"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram5" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/loading_dialog_5"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram1" />
+
+    <ImageView
+        android:id="@+id/loading_dialog_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/loading_dialog_6"
+        android:scaleType="fitXY"
+        android:src="@drawable/load_anim_fram2" />
+
+</RelativeLayout>

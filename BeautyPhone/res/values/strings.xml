@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeautyPhone</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name_full">JieCaoVideoPlayer</string>
+    <string name="tips_not_wifi">你正在使用流量观看视频，这样会消耗您的移动数据流量，确定播放吗？</string>
+    <string name="tips_not_wifi_confirm">确定</string>
+    <string name="tips_not_wifi_cancel">关闭</string>
+    <string name="no_url">No mUrl</string>
+
+</resources>

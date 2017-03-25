@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loginactivity_head_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_head_image" />
+
+        <ImageView
+            android:id="@+id/loginactivity_head_appicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/conver_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginactivity_head_appicon"
+            android:layout_centerHorizontal="true"
+            android:text="美天一个电话，联系不断"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_xs" />
+
+        <LinearLayout
+            android:id="@+id/loginactivity_view_title_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/loginactivity_view_title_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xl" />
+
+            <TextView
+                android:id="@+id/loginactivity_view_title_regist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="#fffff0"
+                android:textSize="@dimen/text_size_xl" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/login_activity_viewscrollbar"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_view_scrol_bar" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_view_scrol_bar_bg" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/loginactivity_viewpager_containt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainactivitylayout_actiontitlelayout" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

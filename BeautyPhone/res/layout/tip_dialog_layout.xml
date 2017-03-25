@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/tip_dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_dialog_bg"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tip_dialog_tiptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip_dialog_bg"
+        android:layout_alignRight="@+id/tip_dialog_bg"
+        android:layout_alignTop="@+id/tip_dialog_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="您将赏赐。。。3元，从您的余额中扣除，确定赏赐吗?"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/adjust"
+        android:layout_width="5dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/tip_dialog_ok"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tip_dialog_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/adjust"
+        android:background="@drawable/login_button_bg"
+        android:text="确定"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/tip_dialog_cancle"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tip_dialog_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/adjust"
+        android:background="@drawable/login_button_bg"
+        android:text="返回"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

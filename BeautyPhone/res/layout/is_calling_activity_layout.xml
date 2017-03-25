@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iscall_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/iscalling_upview_containerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#30000000" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/iscalling_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="丽丽斯塔"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xxl" />
+
+            <TextView
+                android:id="@+id/iscalling_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="18873552518"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/iscalling_downview_containerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/iscalling_callstatetext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="正在呼叫"
+            android:textColor="#2f4044"
+            android:textSize="@dimen/text_size_m" />
+
+        <ImageView
+            android:id="@+id/iscalling_direct_imageanim"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/iscalling_callstatetext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/directcall_anim" />
+
+        <ImageView
+            android:id="@+id/iscalling_fromcall_cover"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/iscalling_direct_imageanim"
+            android:layout_alignTop="@+id/iscalling_callstatetext"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iscalling_direct_imageanim"
+            android:src="@drawable/conver_blue" />
+
+        <ImageView
+            android:id="@+id/iscalling_tocall_cover"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/iscalling_direct_imageanim"
+            android:layout_alignTop="@+id/iscalling_callstatetext"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iscalling_direct_imageanim"
+            android:src="@drawable/conver_orange" />
+
+        <TextView
+            android:id="@+id/iscalling_calltip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iscalling_direct_imageanim"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="直拨"
+            android:textColor="#2f4044"
+            android:textSize="@dimen/text_size_m" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp" >
+
+            <LinearLayout
+                android:id="@+id/iscalling_bigsound_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/a_iscalling_otherbut_normalbg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/big_sound_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免提"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_xs" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iscalling_nosound_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/iscalling_bigsound_button"
+                android:background="@drawable/a_iscalling_otherbut_normalbg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/no_sound_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="静音"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_xs" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iscalling_savesound_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iscalling_bigsound_button"
+                android:background="@drawable/a_iscalling_otherbut_normalbg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/save_sound_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="录音"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_xs" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iscalling_closecall_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/iscalling_bigsound_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/a_iscalling_closecallbut_normalbg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/close_call_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iscalling_backcall_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/iscalling_bigsound_button"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/iscalling_closecall_button"
+                android:background="@drawable/a_iscalling_callbackbutton"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/back_call_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回拨"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_xs" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iscalling_openboard_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/iscalling_bigsound_button"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iscalling_closecall_button"
+                android:background="@drawable/a_iscalling_otherbut_normalbg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/open_board_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="键盘"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_xs" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

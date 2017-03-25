@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/callnote_listview_item_mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/recycleview_item_click_bg" >
+
+    <TextView
+        android:id="@+id/callnote_listview_itme_timedate"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="07:22"
+        android:textColor="@color/normel_text_color"
+        android:textSize="@dimen/text_size_xs" />
+
+    <TextView
+        android:layout_width="@dimen/space_xxxxs"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/callnote_listview_itme_timedate"
+        android:background="#40a2a2a2" />
+
+    <ImageView
+        android:id="@+id/callnote_listview_itme_imageline"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/callnote_listview_itme_timedate"
+        android:scaleType="fitXY"
+        android:src="@drawable/contacts_split_time_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_xs"
+        android:layout_toRightOf="@+id/callnote_listview_itme_imageline" >
+
+        <TextView
+            android:id="@+id/callnote_listview_itme_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张惜玉"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_l" />
+
+        <TextView
+            android:id="@+id/callnote_listview_itme_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_xs"
+            android:layout_toRightOf="@+id/callnote_listview_itme_name"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_ms" />
+
+        <ImageView
+            android:id="@+id/callnote_listview_itme_callstate"
+            android:layout_width="@dimen/text_size_mm"
+            android:layout_height="@dimen/text_size_mm"
+            android:layout_below="@+id/callnote_listview_itme_name"
+            android:layout_marginTop="@dimen/space_xms"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_call_incoming_normal" />
+
+        <TextView
+            android:id="@+id/callnote_listview_itme_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/callnote_listview_itme_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/space_xms"
+            android:layout_toRightOf="@+id/callnote_listview_itme_callstate"
+            android:text="浙江杭州 联通"
+            android:textColor="@color/normel_text_color"
+            android:textSize="@dimen/text_size_ms" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/callnote_listview_itme_radioinfo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_s"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/callnote_listview_itme_ifomationicon"
+            android:layout_width="@dimen/space_xxl"
+            android:layout_height="@dimen/space_xxl"
+            android:layout_toLeftOf="@+id/callnote_listview_itme_radiobutton"
+            android:src="@drawable/ic_information_normal" />
+
+        <ImageView
+            android:id="@+id/callnote_listview_itme_radiobutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/calllog_radiobuggon_normal"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/callnote_listview_itme_callinfomation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_xs"
+        android:layout_toLeftOf="@+id/callnote_listview_itme_radioinfo_layout"
+        android:text="响铃45秒"
+        android:textColor="@color/normel_text_color"
+        android:textSize="@dimen/text_size_ms" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_xs"
+        android:layout_marginRight="@dimen/space_s"
+        android:layout_toRightOf="@+id/callnote_listview_itme_imageline"
+        android:background="#20000000" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loginfragment_down_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/loginfragment_account_rootview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edittext_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_account_icon" />
+
+            <EditText
+                android:id="@+id/loginfragment_account_edittext"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="手机号"
+                android:inputType="number"
+                android:textColor="#929292"
+                android:textColorHint="#e8e8e8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginfragment_password_rootview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginfragment_account_rootview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edittext_bg"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_password_icon" />
+
+            <EditText
+                android:id="@+id/loginfragment_password_edittext"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:textColor="#929292"
+                android:textColorHint="#e8e8e8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loginfragment_fogetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/loginfragment_password_rootview"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="忘记密码?"
+            android:textSize="@dimen/text_size_s" />
+
+        <Button
+            android:id="@+id/loginfragment_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loginfragment_fogetpassword"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_button_bg"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_l"
+            android:translationZ="3dp" />
+    </RelativeLayout>
+
+</LinearLayout>

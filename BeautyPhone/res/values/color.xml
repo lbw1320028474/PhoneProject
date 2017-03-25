@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_activity_title_action_text_color">#ff666666</color>
+    <color name="main_activity_mainbg_color">#ffffff</color>
+    <color name="normel_text_color">#a2a2a2</color>
+    <color name="calllog_item_normalcolor">#000000</color>
+    <color name="calllog_item_misscallcolor">#e4007f</color>
+
+</resources>

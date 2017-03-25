@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personalfragment_contact_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/personalfragment_main_recylceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </android.support.v7.widget.RecyclerView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:scrollbars="none"
+        android:translationZ="3dp" >
+
+        <LinearLayout
+            android:id="@+id/personalfragment_news_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:translationZ="3dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_video"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="视频"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_top"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="头条"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_keji"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="科技"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_guonei"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="国内"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_guoji"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="国际"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_yule"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="娱乐"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_tiyu"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="体育"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_junshi"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="军事"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_shehui"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="社会"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_caijing"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="财经"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="@dimen/space_xxxxs"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/personalfragment_news_title_shishang"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="时尚"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

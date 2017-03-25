@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactsfragment_normalitem_rootview_linnerlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/contactsfragment_normalitem_rootview"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/recycleview_item_click_bg"
+        android:translationZ="3dp" >
+
+        <TextView
+            android:id="@+id/contactsfragment_pinytextview"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#aeaeae" />
+
+        <ImageView
+            android:id="@+id/contactsfragment_peoplevonver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/contactsfragment_pinytextview"
+            android:background="@drawable/converimagegroud"
+            android:src="@drawable/conver_blue" />
+
+        <TextView
+            android:id="@+id/contactsfragment_beautyFirend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_s"
+            android:layout_toRightOf="@+id/contactsfragment_peoplevonver"
+            android:text="莉莉丝塔"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_l" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="@dimen/space_s"
+            android:background="#c8c8c8" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contactsfragment_item_subaction_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1388ea"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/contactsfragment_item_subaction_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/contact_item_call_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拨打电话"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactsfragment_item_subaction_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/contact_item_message_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发消息"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactsfragment_item_subaction_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/contact_item_delete_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactsfragment_item_subaction_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/contact_item_edit_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactsfragment_item_subaction_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/contact_item_shred_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享号码"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

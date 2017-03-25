@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_xxl">23dp</dimen>
+    <dimen name="text_size_xl">19dp</dimen>
+    <dimen name="text_size_l">17dp</dimen>
+    <dimen name="text_size_m">15dp</dimen>
+    <dimen name="text_size_mm">14dp</dimen>
+    <dimen name="text_size_s">13dp</dimen>
+    <dimen name="text_size_ms">12dp</dimen>
+    <dimen name="text_size_xs">11dp</dimen>
+    <dimen name="text_size_xxs">8dp</dimen>
+    <dimen name="space_xxl">32dp</dimen>
+    <dimen name="space_xl">22dp</dimen>
+    <dimen name="space_l">17dp</dimen>
+    <dimen name="space_m">12dp</dimen>
+    <dimen name="space_xm">10dp</dimen>
+    <dimen name="space_s">7dp</dimen>
+    <dimen name="space_xs">3dp</dimen>
+    <dimen name="space_xms">2dp</dimen>
+    <dimen name="space_xxs">1dp</dimen>
+    <dimen name="space_xxxs">0.5dp</dimen>
+    <dimen name="space_xxxxs">0.3dp</dimen>
+    <dimen name="icon_size_xxxxs">30dp</dimen>
+    <dimen name="icon_size_xxxs">35dp</dimen>
+    <dimen name="icon_size_xxs">45dp</dimen>
+    <dimen name="icon_size_xs">50dp</dimen>
+    <dimen name="icon_size_s">55dp</dimen>
+    <dimen name="icon_size_m">60dp</dimen>
+    <dimen name="icon_size_l">65dp</dimen>
+    <dimen name="icon_size_xl">70dp</dimen>
+    <dimen name="icon_size_xxl">75dp</dimen>
+    <dimen name="icon_size_xxxl">80dp</dimen>
+
+    <!-- banner-big -->
+    <dimen name="square_banner_big_h">120dp</dimen>
+
+    <integer name="SimilarChildRelativeLayout_top">15</integer>
+    <integer name="SimilarChildRelativeLayout_bottom">15</integer>
+
+    <dimen name="actionbar_title">20sp</dimen>
+    <dimen name="input_text_height">52dp</dimen>
+    <dimen name="input_text_margin_left">11.5dp</dimen>
+    <dimen name="input_text_margin_right">11.5dp</dimen>
+    <dimen name="input_text_margin_top">11.5dp</dimen>
+    <dimen name="input_two_text_margin_top">8dp</dimen>
+    <dimen name="line_margin_top">15dp</dimen>
+    <dimen name="line_margin_left">15dp</dimen>
+    <dimen name="line_margin_right">15dp</dimen>
+    <dimen name="authcode_text_width">150dp</dimen>
+    <dimen name="authcode_text_size">20dp</dimen>
+    <dimen name="corner">4dp</dimen>
+    <dimen name="button_padding_topbottom">5dp</dimen>
+
+    <!-- 帐号安全 -->
+    <dimen name="text_padding_left">15dp</dimen>
+    <dimen name="text_padding_right">15dp</dimen>
+    <dimen name="text_view_height">61dp</dimen>
+    <dimen name="text_sub_view_height">50dp</dimen>
+    <dimen name="corner_line_width">0.5dp</dimen>
+    <dimen name="jc_progress_dialog_margin_top">80dp</dimen>
+    <dimen name="jc_volume_dialog_margin_left">24dp</dimen>
+
+</resources>

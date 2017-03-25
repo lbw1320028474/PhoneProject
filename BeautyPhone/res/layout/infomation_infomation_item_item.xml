@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <LinearLayout
+            android:id="@+id/infomationinfomationitem_adjustlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contactinfomation_infomation_descript_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="13765511314"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/contactinfomation_infomation_descript_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/contactinfomation_infomation_descript_title"
+                android:layout_below="@+id/contactinfomation_infomation_descript_title"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:text="手机（中国移动)"
+                android:textColor="#c8c8c8" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c8c8c8" />
+    </RelativeLayout>
+
+</LinearLayout>

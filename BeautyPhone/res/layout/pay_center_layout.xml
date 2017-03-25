@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/paycenter_titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/paycenter_back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pay_center_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值中心"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/text_size_m" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_actionbar_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxxs"
+                android:layout_below="@+id/paycenter_titlebar"
+                android:background="#cecece" />
+
+            <TextView
+                android:id="@+id/paycenter_useraccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_actionbar_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="18873220809"
+                android:textColor="#ff8a00"
+                android:textSize="@dimen/text_size_xxl" />
+
+            <TextView
+                android:id="@+id/paycenter_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paycenter_useraccount"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="余额：10.25"
+                android:textColor="#cecece"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/paycenter_true_addmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paycenter_useraccount"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/paycenter_black"
+                android:textColor="#ff8a00"
+                android:textSize="@dimen/text_size_m" />
+
+            <LinearLayout
+                android:id="@+id/paycenter_chose_root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paycenter_black"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_5_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价4.99"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_10_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价9.98"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_20_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价19.98"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_30_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价29.9"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_50_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价49.8"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_100_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价99.6"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_200_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价199"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/paycenter_500_yuan_button"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/paycenter_charge_chose_button"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500元"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/text_size_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="售价498"
+                            android:textColor="#1388ea"
+                            android:textSize="@dimen/space_xm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/pay_type_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paycenter_chose_root_layout" >
+
+                <RadioButton
+                    android:id="@+id/pay_type_radio_zhifubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝  (推荐)"
+                    android:textColor="#666666" />
+
+                <RadioButton
+                    android:id="@+id/pay_type_radio_weichat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textColor="#666666" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/paycenter_pay_button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/pay_type_radio_group"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/normal_call_button_bg"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_xl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paycenter_pay_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="以上充值为美天电话账号充值，非普通的话费充值"
+                android:textColor="#cecece"
+                android:textSize="@dimen/text_size_m" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/contactinfomation_infomation_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/viewgroud"
+        android:orientation="vertical"
+        android:translationZ="3dp" >
+
+        <TextView
+            android:id="@+id/contactinfomation_infomation_action_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="雷帮文  简介"
+            android:textColor="#1388ea"
+            android:textSize="@dimen/text_size_mm" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_xxxxs"
+            android:background="#c8c8c8" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contactinfomation_infomation_recylceview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:scrollbars="none" >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+</LinearLayout>

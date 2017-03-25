@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClientLoginServlet</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.ClientLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FYCallEmpower</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.FYCallEmpower</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.Test</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClientRegistServlet</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.ClientRegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CallLogPush</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.CallLogPush</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BmobPayOrderServlet</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.BmobPayOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyPayOrderServlet</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.MyPayOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ZYAdCallBackServlet</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.ZYAdCallBackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GrantMoneyServlet</servlet-name>
+    <servlet-class>com.example.BeatyPhoneServer.servlet.GrantMoneyServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ClientLoginServlet</servlet-name>
+    <url-pattern>/ClientLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FYCallEmpower</servlet-name>
+    <url-pattern>/FYCallEmpower</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/servlet/Test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClientRegistServlet</servlet-name>
+    <url-pattern>/ClientRegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CallLogPush</servlet-name>
+    <url-pattern>/CallLogPush</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BmobPayOrderServlet</servlet-name>
+    <url-pattern>/BmobPayOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyPayOrderServlet</servlet-name>
+    <url-pattern>/MyPayOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZYAdCallBackServlet</servlet-name>
+    <url-pattern>/ZYAdCallBackServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GrantMoneyServlet</servlet-name>
+    <url-pattern>/GrantMoneyServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

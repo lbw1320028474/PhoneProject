@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/calllogfragment_titlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="@dimen/text_size_xl"
+        android:layout_marginRight="@dimen/text_size_xl"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/container_callnote_actionbg" >
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_allcalllog"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/contacts_allnote_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="全部通话"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_misscalllog"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="未接电话"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_astrangenumber"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="陌生号码"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calllogfragment_recylceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/calllogfragment_titlelayout"
+        android:fadeScrollbars="false"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/calllogfragment__donw_tool_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/space_xl"
+        android:layout_marginRight="@dimen/space_xl"
+        android:background="@drawable/container_callnote_actionbg"
+        android:orientation="horizontal"
+        android:translationZ="5dp" >
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/space_xl"
+                android:layout_height="@dimen/space_xl"
+                android:src="@drawable/all_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="编辑"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_selectedall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/space_xl"
+                android:layout_height="@dimen/space_xl"
+                android:src="@drawable/all_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全选"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/space_xl"
+                android:layout_height="@dimen/space_xl"
+                android:src="@drawable/all_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="删除"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_numberboard"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/space_xl"
+                android:layout_height="@dimen/space_xl"
+                android:src="@drawable/call_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="拨号"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calllogfragment_menu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/space_xl"
+                android:layout_height="@dimen/space_xl"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="菜单"
+                android:textColor="@color/main_activity_title_action_text_color"
+                android:textSize="@dimen/text_size_xs" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 拨号盘 -->
+
+    <LinearLayout
+        android:id="@+id/number_board_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:translationZ="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/numberboard_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxxs"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(+)"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABC"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEF"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxxs"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8"
+                    android:textSize="@dimen/text_size_xxl" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GHI"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JKL"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MNO"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxxs"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PQRS"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TUV"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WXYZ"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxxs"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_numberx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(P)"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_number0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_numberj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_xxl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(W)"
+                        android:textColor="@color/main_activity_title_action_text_color"
+                        android:textSize="@dimen/text_size_xs" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_xxxxs"
+                android:background="#c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_close"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/number_board_close" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_call_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/number_board_callbutton_bg"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/call_button_icon" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+
+                <LinearLayout
+                    android:id="@+id/numberboard_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/number_board_delete" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/space_xxxxs"
+                    android:layout_height="match_parent"
+                    android:background="#c8c8c8" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

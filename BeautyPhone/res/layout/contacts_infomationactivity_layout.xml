@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/contactsinfomation_scrolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/contactsinfomation_upconver_view"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#ffffff"
+                android:translationZ="2dp" >
+
+                <ImageView
+                    android:id="@+id/contactsinfomation_contacts_conver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_conver" />
+
+                <LinearLayout
+                    android:id="@+id/contactsinfomation_convertoolbarlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/contactsinfomation_allcalllog"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="通话记录"
+                            android:textColor="#80ffffff"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/contactsinfomation_infomation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="详细信息"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/text_size_m" />
+
+                        <TextView
+                            android:id="@+id/contactsinfomation_calllogsound"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="通话录音"
+                            android:textColor="#80ffffff"
+                            android:textSize="@dimen/text_size_m" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/contactsinfomation_viewpagerscrolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_xms"
+                        android:layout_marginTop="@dimen/space_xm"
+                        android:background="#ffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/contactsinfomation__viewpager_containt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/contactsinfomation_namelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xm"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/space_xs"
+            android:src="@drawable/toleft_array" />
+
+        <TextView
+            android:id="@+id/contactsinfomation_nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_xs"
+            android:text="莉莉丝塔"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_xl" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contactsinfomation_uprighttoollayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_l"
+        android:layout_marginTop="@dimen/space_xm"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/contactsinfomation_sterredstar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:src="@drawable/up_toolbar_star" />
+
+        <ImageView
+            android:id="@+id/contactsinfomation_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:src="@drawable/up_toolbar_editicon" />
+
+        <ImageView
+            android:id="@+id/contactsinfomation_othermenu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/space_l"
+            android:src="@drawable/up_toolbar_other" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/contactslistfragment__serch_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/contactslist_serch_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/space_xs"
+            android:layout_marginLeft="@dimen/space_xs"
+            android:layout_marginRight="@dimen/space_xs"
+            android:layout_marginTop="@dimen/space_xs"
+            android:background="@drawable/container_callnote_actionbg"
+            android:hint="在43个联系人中搜索"
+            android:paddingLeft="@dimen/space_xs"
+            android:textSize="@dimen/text_size_xs" />
+    </LinearLayout>
+
+    <com.example.myview.MySideBar
+        android:id="@+id/contactslistfragment_mysidebar"
+        android:layout_width="@dimen/space_l"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactslistfragment__serch_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contactsfragment_recylceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/contactslistfragment__serch_layout"
+        android:layout_toLeftOf="@+id/contactslistfragment_mysidebar"
+        android:fadeScrollbars="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/contactsfragment__donw_tool_layout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/new_contacts_button"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:translationZ="5dp" >
+
+        <LinearLayout
+            android:id="@+id/contactsfragment_add_newcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/space_xxl"
+                android:layout_height="@dimen/space_xxl"
+                android:src="@drawable/contacts_add_new_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

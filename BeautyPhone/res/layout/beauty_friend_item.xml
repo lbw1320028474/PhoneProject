@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <ImageView
+        android:id="@+id/beauty_friend_conver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_s"
+        android:background="@drawable/converimagegroud"
+        android:scaleType="fitXY"
+        android:src="@drawable/conver_mybeautyfriend" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_s"
+        android:layout_toRightOf="@+id/beauty_friend_conver"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/beauty_friend_beautyFirend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美天好友"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_l" />
+
+        <TextView
+            android:id="@+id/beauty_friend_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beauty_friend_beautyFirend"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/space_xms"
+            android:text="好友之间享受更加优惠和稳定的通话"
+            android:textColor="#c8c8c8"
+            android:textSize="@dimen/text_size_ms" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_s"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_icon" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_s"
+        android:layout_marginRight="@dimen/space_s"
+        android:background="#c8c8c8" />
+
+</RelativeLayout>

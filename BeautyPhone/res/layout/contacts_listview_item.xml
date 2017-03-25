@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacts_listview_items_mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/contacts_listview_itme_cover"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/test_cover" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_xs"
+        android:layout_toRightOf="@+id/contacts_listview_itme_cover" >
+
+        <TextView
+            android:id="@+id/contacts_listview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张惜玉"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_ms" />
+
+        <ImageView
+            android:id="@+id/contacts_listview_itme_saveposition"
+            android:layout_width="@dimen/text_size_xs"
+            android:layout_height="@dimen/text_size_xs"
+            android:layout_below="@+id/contacts_listview_name"
+            android:layout_marginTop="@dimen/space_xms"
+            android:src="@drawable/ic_contacts_card_single" />
+
+        <TextView
+            android:id="@+id/contacts_listview_itme_phonenumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contacts_listview_name"
+            android:layout_marginLeft="@dimen/space_xs"
+            android:layout_marginTop="@dimen/space_xms"
+            android:layout_toRightOf="@+id/contacts_listview_itme_saveposition"
+            android:text="15700086379"
+            android:textColor="@color/normel_text_color"
+            android:textSize="@dimen/text_size_xxs" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/contacts_listview_ifomationicon"
+        android:layout_width="@dimen/space_xxl"
+        android:layout_height="@dimen/space_xxl"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_s"
+        android:src="@drawable/ic_information_normal" />
+
+    <TextView
+        android:id="@+id/contacts_listview_itme_friendtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_xs"
+        android:layout_toLeftOf="@+id/contacts_listview_ifomationicon"
+        android:text="好友"
+        android:textColor="@color/normel_text_color"
+        android:textSize="@dimen/text_size_xxs" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_xs"
+        android:layout_toRightOf="@+id/contacts_listview_itme_imageline"
+        android:background="#20000000" />
+
+</RelativeLayout>
