@@ -1,7 +1,7 @@
 package com.example.db;
 
 import com.example.contacts.ContactsGroup;
-
+//leibangwen
 public class DataTypeUtil {
 	public static String getNumberDescript(String type){
 		String descript = "";
