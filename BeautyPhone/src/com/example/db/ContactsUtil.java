@@ -551,9 +551,11 @@ public class ContactsUtil {
 								contactPeopleBean.setContactCoverId(cursor1.getString(cursor1.getColumnIndex(ContactsContract.Contacts.PHOTO_ID)));
 								if(contactPeopleBean.getContactCoverId() != null && !contactPeopleBean.getContactCoverId().equals("")){
 									contactPeopleBean.setContactCoverBitmap(BitmapUtil.getPhoto(context, contactPeopleBean.getContactId() + ""));
+									contactPeopleBean.setConverColor(ConverBitmapSourse.converBitmapColor[0]);
 								}else{
 									int chosePotion = contactPeopleBean.getContactId() % 4;
 									//int chosePotion = (int) (Math.random() * 4);
+									contactPeopleBean.setConverColor(ConverBitmapSourse.converBitmapColor[chosePotion]);
 									contactPeopleBean.setContactCoverBitmap(BitmapFactory.decodeResource(context.getResources(), 
 											ConverBitmapSourse.converBitmapSourse[chosePotion]));
 								}

@@ -245,6 +245,7 @@ public class ContactsListAdapter extends RecyclerView.Adapter<ViewHolder> implem
 			((MyContactsViewHolder)(arg0)).subItem_share.setTag(arg1);
 			((MyContactsViewHolder)(arg0)).subItem_rootView.setTag(arg1);
 			((MyContactsViewHolder)(arg0)).relativeLayout.setTag(((MyContactsViewHolder)(arg0)).subItem_rootView);
+			((MyContactsViewHolder)(arg0)).subItem_rootView.setBackgroundColor(allListData.get(arg1).getConverColor());
 			((MyContactsViewHolder)(arg0)).contactsName.setText(allListData.get(arg1).getName());
 			((MyContactsViewHolder)(arg0)).pinyin.setText(allListData.get(arg1).getIsFirstItemShowChar());
 			if(allListData.get(arg1).getContactCoverBitmap() != null){
@@ -272,6 +273,7 @@ public class ContactsListAdapter extends RecyclerView.Adapter<ViewHolder> implem
 					Intent intent = new Intent(ContactsListAdapter.this.context, ContactsInfomationActivity.class);
 					intent.putExtra("data1",sterredListData.get(position).getContactId() + "");
 					intent.putExtra("intentType", "contactMainItem");
+					intent.putExtra("styleColor", sterredListData.get(position).getConverColor());
 					ContactsListAdapter.this.context.startActivity(intent);
 				}
 			});
@@ -399,8 +401,8 @@ public class ContactsListAdapter extends RecyclerView.Adapter<ViewHolder> implem
 		}
 
 	}
-	
-	
+
+
 
 	public void deleteContact(String contactId){
 		showSubView.setVisibility(View.GONE);

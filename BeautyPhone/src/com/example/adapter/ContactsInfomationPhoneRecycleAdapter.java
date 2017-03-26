@@ -2,6 +2,7 @@ package com.example.adapter;
 
 import java.util.ArrayList;
 
+import com.example.activity.ContactsInfomationActivity;
 import com.example.beautyphone.R;
 import com.example.contacts.CardLocationBean;
 import com.example.contacts.NumberInfomation;
@@ -89,7 +90,8 @@ public class ContactsInfomationPhoneRecycleAdapter extends RecyclerView.Adapter<
 		if(allListData.get(arg1) != null){
 			((ItemViewHolder)(arg0)).rootView.setTag(arg1);
 			((ItemViewHolder)(arg0)).item_sendmessage_icon.setTag(arg1);
-			Log.e("c", "设置了电话item: " + allListData.get(arg1));
+			((ItemViewHolder)(arg0)).item_phone_icon.setColorFilter(ContactsInfomationActivity.styleColor);
+			((ItemViewHolder)(arg0)).item_sendmessage_icon.setTextColor(ContactsInfomationActivity.styleColor);
 			((ItemViewHolder)(arg0)).phone_number.setText(allListData.get(arg1).getNumber());
 			if(allListData.get(arg1).getNumberDescript() != null && !allListData.get(arg1).getNumberDescript().equals(""))
 			{

@@ -149,8 +149,8 @@ public class IsCallIngActivity extends Activity implements OnClickListener, FYCa
 				bean.setCountryiso("CN");
 				Log.e("c", bean.toString());
 				newCallLogUri= ContactsUtil.addCallLog(IsCallIngActivity.this, bean);
-				Intent i = new Intent(BroadCaseReceiverFilter.CALLLOG_UPDATAED);
-				IsCallIngActivity.this.sendBroadcast(i);
+				/*Intent i = new Intent(BroadCaseReceiverFilter.CALLLOG_UPDATAED);
+				IsCallIngActivity.this.sendBroadcast(i);*/
 				//Log.e("c", uri.toString());
 				/*if(ContactsUtil.getCallLogByUri(uri) != null){
 					Log.e("c", ContactsUtil.getCallLogByUri(uri).toString());
@@ -175,8 +175,6 @@ public class IsCallIngActivity extends Activity implements OnClickListener, FYCa
 				if(row <= 0){
 					return;
 				}
-				Intent i = new Intent(BroadCaseReceiverFilter.CALLLOG_UPDATAED);
-				IsCallIngActivity.this.sendBroadcast(i);
 				/*
 				dpreferenceUtil.setShareData(IsCallIngActivity.this, "userInfo", userJson);
 				Intent i = new Intent(BroadCaseReceiverFilter.PAY_SUCCESS_FILTER);
@@ -192,6 +190,8 @@ public class IsCallIngActivity extends Activity implements OnClickListener, FYCa
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
+		Intent i = new Intent(BroadCaseReceiverFilter.CALLLOG_UPDATAED);
+		IsCallIngActivity.this.sendBroadcast(i);
 		super.onDestroy();
 	}
 	private void initView() {

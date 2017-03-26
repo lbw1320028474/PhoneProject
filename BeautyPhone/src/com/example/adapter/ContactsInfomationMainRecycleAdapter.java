@@ -2,6 +2,7 @@ package com.example.adapter;
 
 import java.util.ArrayList;
 
+import com.example.activity.ContactsInfomationActivity;
 import com.example.beautyphone.R;
 import com.example.contacts.ContactInfomationNumberListBean;
 import com.example.contacts.ContactInfomationOtherListBean;
@@ -131,7 +132,8 @@ public class ContactsInfomationMainRecycleAdapter extends RecyclerView.Adapter<V
 			((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setAdapter(adapter);
 			Log.e("c", "ÊÊÅäÆ÷ÉèÖÃÍê±Ï");
 		}else if(arg0.getItemViewType() == 1){
-
+			((AddFriendItemViewHolder)arg0).addFriend_addfriend.setTextColor(ContactsInfomationActivity.styleColor);
+			((AddFriendItemViewHolder)arg0).addFriendIcon.setColorFilter(ContactsInfomationActivity.styleColor);
 		}else if(arg0.getItemViewType() == 2){
 			ContactInfomationOtherListBean otherData = ((ContactInfomationOtherListBean)(allListData.get(arg1)));
 			LayoutParams layoutParams = (LayoutParams) ((InfomationViewHolder)(arg0)).infomationRecycleyView.getLayoutParams();
@@ -143,7 +145,6 @@ public class ContactsInfomationMainRecycleAdapter extends RecyclerView.Adapter<V
 				layoutParams.height = 0;
 				((InfomationViewHolder)(arg0)).infomationRecycleyView.setLayoutParams(layoutParams);
 			}
-
 			ContactsInfomationInfomationRecycleAdapter adapter = new ContactsInfomationInfomationRecycleAdapter(this.context, otherInfomationList);
 			phoneRecycleViewLayoutManager = new LinearLayoutManager(this.context);
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setLayoutManager(phoneRecycleViewLayoutManager);
@@ -152,15 +153,10 @@ public class ContactsInfomationMainRecycleAdapter extends RecyclerView.Adapter<V
 			//((InfomationViewHolder)(arg0)).infomationRecycleyView.setNestedScrollingEnabled(false);
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setItemAnimator(anima);
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setAdapter(adapter);
+			((InfomationViewHolder)(arg0)).nameTitle.setTextColor(ContactsInfomationActivity.styleColor);
 			((InfomationViewHolder)(arg0)).nameTitle.setText(ContactsUtil.infomationBean.getName() + " ¼ò½é");
 			Log.e("c", "ÊÊÅäÆ÷ÉèÖÃÍê±Ï");
 		}
-		/*if(allListData.get(arg1) != null && !allListData.get(arg1).endsWith("")){
-			((ItemViewHolder)(arg0)).phone_number.setText(allListData.get(arg1));
-			((ItemViewHolder)(arg0)).item_phone_icon.setOnClickListener(this);
-			((ItemViewHolder)(arg0)).item_sendmessage_icon.setOnClickListener(this);
-			((ItemViewHolder)(arg0)).phone_number.setOnLongClickListener(this);
-		}*/
 	}
 
 	@Override

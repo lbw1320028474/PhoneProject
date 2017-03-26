@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
  *
  */
 public class ContactPeopleBean{
+	private int converColor = ConverBitmapSourse.converBitmapColor[0];
 	private String isFirstItemShowChar = "";
 	private String namePinYFirstChar = "";
 	private int itemType = 2;
@@ -21,8 +22,12 @@ public class ContactPeopleBean{
 	private String contactCoverId = "";	//
 	private Bitmap contactCoverBitmap = null;		//
 	private int starred = -1;		//
-
-
+	public int getConverColor() {
+		return converColor;
+	}
+	public void setConverColor(int converColor) {
+		this.converColor = converColor;
+	}
 	public String getIsFirstItemShowChar() {
 		return isFirstItemShowChar;
 	}
@@ -47,23 +52,11 @@ public class ContactPeopleBean{
 	public void setSterredList(ArrayList<ContactPeopleBean> sterredList) {
 		this.sterredList = sterredList;
 	}
-	public ArrayList<String> getNumberList() {
-		return numberList;
-	}
-	public void setNumberList(ArrayList<String> numberList) {
-		this.numberList = numberList;
-	}
 	public String getNamePinyin() {
 		return namePinyin;
 	}
 	public void setNamePinyin(String namePinyin) {
 		this.namePinyin = namePinyin;
-	}
-	public int getStarred() {
-		return starred;
-	}
-	public void setStarred(int starred) {
-		this.starred = starred;
 	}
 	public int getContactId() {
 		return contactId;
@@ -77,6 +70,12 @@ public class ContactPeopleBean{
 	public void setName(String name) {
 		this.name = name;
 	}
+	public ArrayList<String> getNumberList() {
+		return numberList;
+	}
+	public void setNumberList(ArrayList<String> numberList) {
+		this.numberList = numberList;
+	}
 	public String getContactCoverId() {
 		return contactCoverId;
 	}
@@ -89,12 +88,21 @@ public class ContactPeopleBean{
 	public void setContactCoverBitmap(Bitmap contactCoverBitmap) {
 		this.contactCoverBitmap = contactCoverBitmap;
 	}
+	public int getStarred() {
+		return starred;
+	}
+	public void setStarred(int starred) {
+		this.starred = starred;
+	}
 	@Override
 	public String toString() {
-		return "ContactPeopleBean [namePinyin=" + namePinyin + ", contactId=" + contactId + ", name=" + name
-				+ ", numberList=" + numberList + ", contactCoverId=" + contactCoverId + ", contactCoverBitmap="
-				+ contactCoverBitmap + ", starred=" + starred + "]";
+		return "ContactPeopleBean [converColor=" + converColor + ", isFirstItemShowChar=" + isFirstItemShowChar
+				+ ", namePinYFirstChar=" + namePinYFirstChar + ", itemType=" + itemType + ", sterredList=" + sterredList
+				+ ", namePinyin=" + namePinyin + ", contactId=" + contactId + ", name=" + name + ", numberList="
+				+ numberList + ", contactCoverId=" + contactCoverId + ", contactCoverBitmap=" + contactCoverBitmap
+				+ ", starred=" + starred + "]";
 	}
+
 
 
 }

@@ -150,6 +150,7 @@ public class ContactsFragment extends Fragment implements OnClickListener{
 				Intent intent = new Intent(getActivity(), ContactsInfomationActivity.class);
 				intent.putExtra("data1", allContactsListData.get(position).getContactId() + "");
 				intent.putExtra("intentType", "contactMainItem");
+				intent.putExtra("styleColor", allContactsListData.get(position).getConverColor());
 				startActivity(intent);
 			}
 		});

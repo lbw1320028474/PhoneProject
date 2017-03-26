@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.example.adapter.MyInfomationViewPagerAdapter;
 import com.example.beautyphone.R;
 import com.example.contacts.ContactChangeListener;
+import com.example.contacts.ConverBitmapSourse;
 import com.example.db.ContactsUtil;
 import com.example.fragment.ContactInfomationCallLogFragment;
 import com.example.fragment.ContactInfomationCallSoundFragment;
@@ -35,6 +36,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ContactsInfomationActivity extends FragmentActivity implements OnClickListener,OnPageChangeListener{
+	public static int styleColor = ConverBitmapSourse.converBitmapColor[0]; 
 	private ViewPager viewPager = null;
 	private ArrayList<Fragment> infomationFragmentList = null;
 	private LinearLayout nameLinearLayout = null;
@@ -76,6 +78,7 @@ public class ContactsInfomationActivity extends FragmentActivity implements OnCl
 		Intent intent = getIntent();
 		fromData = intent.getStringExtra("data1");
 		fromType = intent.getStringExtra("intentType");
+		ContactsInfomationActivity.styleColor = intent.getIntExtra("styleColor", ConverBitmapSourse.converBitmapColor[0]);
 		if(fromType.equals("calllogItem")){
 			numberType = intent.getIntExtra("data2", -1);
 		}
