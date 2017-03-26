@@ -54,7 +54,7 @@ public class ContactInfomationInfomationFragment extends Fragment{
 		mainRecycleyView.setHasFixedSize(true);
 		DefaultItemAnimator anima = new DefaultItemAnimator();
 		mainRecycleyView.setItemAnimator(anima);
-		mainRecycleyView.setNestedScrollingEnabled(false);
+		//mainRecycleyView.setNestedScrollingEnabled(false);
 		mainRecycleyView.setAdapter(mainAdapter);
 		ContactsUtil.getGroupList(getActivity(), handler);
 	}

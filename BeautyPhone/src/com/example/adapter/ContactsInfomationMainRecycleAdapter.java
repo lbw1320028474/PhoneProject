@@ -126,7 +126,7 @@ public class ContactsInfomationMainRecycleAdapter extends RecyclerView.Adapter<V
 			((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setLayoutManager(phoneRecycleViewLayoutManager);
 			((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setHasFixedSize(true);
 			DefaultItemAnimator anima = new DefaultItemAnimator();
-			((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setNestedScrollingEnabled(false);
+			//((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setNestedScrollingEnabled(false);
 			((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setItemAnimator(anima);
 			((PhoneItemViewHolder)(arg0)).phoneRecycleyView.setAdapter(adapter);
 			Log.e("c", "ÊÊÅäÆ÷ÉèÖÃÍê±Ï");
@@ -149,7 +149,7 @@ public class ContactsInfomationMainRecycleAdapter extends RecyclerView.Adapter<V
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setLayoutManager(phoneRecycleViewLayoutManager);
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setHasFixedSize(true);
 			DefaultItemAnimator anima = new DefaultItemAnimator();
-			((InfomationViewHolder)(arg0)).infomationRecycleyView.setNestedScrollingEnabled(false);
+			//((InfomationViewHolder)(arg0)).infomationRecycleyView.setNestedScrollingEnabled(false);
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setItemAnimator(anima);
 			((InfomationViewHolder)(arg0)).infomationRecycleyView.setAdapter(adapter);
 			((InfomationViewHolder)(arg0)).nameTitle.setText(ContactsUtil.infomationBean.getName() + " ¼ò½é");

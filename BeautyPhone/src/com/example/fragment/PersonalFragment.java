@@ -40,15 +40,17 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.OnScrollListener;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PersonalFragment extends Fragment implements OnClickListener{
+public class PersonalFragment extends Fragment implements OnClickListener, OnTouchListener{
 	private NewsDataItemBean newSbean = null;
 	private JuHeNewsJsonData juHeNewsBean = null;
 	private String newsType = "ent";
@@ -193,7 +195,7 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 		kejiTextTitle.setOnClickListener(this);
 		caijingTextTitle.setOnClickListener(this);
 		shishangTextTitle.setOnClickListener(this);
-
+		rootView.setOnTouchListener(this);
 	}
 
 	private void initNewsData(String newType){
@@ -681,5 +683,18 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 		super.onDestroy();
 		getActivity().unregisterReceiver(loginSuccessBroadCase);
 		getActivity().unregisterReceiver(paySuccessBroadCase);
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.personalfragment_contact_rootview:
+			Log.e("c", "ª¨∂Ø¡À");
+			return true;
+		default:
+			break;
+		}
+		return false;
 	}
 }

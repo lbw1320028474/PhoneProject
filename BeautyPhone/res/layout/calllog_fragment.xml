@@ -104,7 +104,7 @@
                 android:layout_weight="1"
                 android:text="编辑"
                 android:textColor="@color/main_activity_title_action_text_color"
-                android:textSize="@dimen/text_size_xs" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -127,13 +127,13 @@
                 android:layout_weight="1"
                 android:text="全选"
                 android:textColor="@color/main_activity_title_action_text_color"
-                android:textSize="@dimen/text_size_xs" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/calllogfragment_delete"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
@@ -150,7 +150,7 @@
                 android:layout_weight="1"
                 android:text="删除"
                 android:textColor="@color/main_activity_title_action_text_color"
-                android:textSize="@dimen/text_size_xs" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -172,7 +172,7 @@
                 android:layout_weight="1"
                 android:text="拨号"
                 android:textColor="@color/main_activity_title_action_text_color"
-                android:textSize="@dimen/text_size_xs" />
+                android:textSize="10sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -194,7 +194,7 @@
                 android:layout_weight="1"
                 android:text="菜单"
                 android:textColor="@color/main_activity_title_action_text_color"
-                android:textSize="@dimen/text_size_xs" />
+                android:textSize="10sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -203,18 +203,25 @@
     <LinearLayout
         android:id="@+id/number_board_root_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:background="#ffffff"
         android:orientation="vertical"
         android:translationZ="5dp"
         android:visibility="gone" >
 
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
         <LinearLayout
             android:id="@+id/numberboard_container_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:translationZ="5dp" >
 
             <TextView
                 android:layout_width="match_parent"
@@ -223,7 +230,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="0dp"
+                android:layout_weight="6"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -244,14 +252,14 @@
                         android:layout_height="wrap_content"
                         android:text="1"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="(+)"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -272,14 +280,14 @@
                         android:layout_height="wrap_content"
                         android:text="2"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="ABC"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -300,14 +308,14 @@
                         android:layout_height="wrap_content"
                         android:text="3"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="DEF"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -323,14 +331,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="0dp"
+                android:layout_weight="6"
                 android:orientation="horizontal" >
 
                 <TextView
                     android:layout_width="@dimen/space_xxxs"
                     android:layout_height="match_parent"
-                    android:background="#c8c8c8"
-                    android:textSize="@dimen/text_size_xxl" />
+                    android:background="#c8c8c8" />
 
                 <LinearLayout
                     android:id="@+id/numberboard_number4"
@@ -345,14 +353,14 @@
                         android:layout_height="wrap_content"
                         android:text="4"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="GHI"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -373,14 +381,14 @@
                         android:layout_height="wrap_content"
                         android:text="5"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="JKL"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -401,14 +409,14 @@
                         android:layout_height="wrap_content"
                         android:text="6"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="MNO"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -424,7 +432,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="0dp"
+                android:layout_weight="6"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -445,14 +454,14 @@
                         android:layout_height="wrap_content"
                         android:text="7"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="PQRS"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -473,14 +482,14 @@
                         android:layout_height="wrap_content"
                         android:text="8"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TUV"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -501,14 +510,14 @@
                         android:layout_height="wrap_content"
                         android:text="9"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="WXYZ"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -524,7 +533,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="0dp"
+                android:layout_weight="6"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -545,14 +555,14 @@
                         android:layout_height="wrap_content"
                         android:text="*"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="(P)"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -573,14 +583,14 @@
                         android:layout_height="wrap_content"
                         android:text="0"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -601,14 +611,14 @@
                         android:layout_height="wrap_content"
                         android:text="#"
                         android:textColor="#000000"
-                        android:textSize="@dimen/text_size_xxl" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="(W)"
                         android:textColor="@color/main_activity_title_action_text_color"
-                        android:textSize="@dimen/text_size_xs" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <TextView
@@ -624,7 +634,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="5"
                 android:orientation="horizontal" >
 
                 <TextView
