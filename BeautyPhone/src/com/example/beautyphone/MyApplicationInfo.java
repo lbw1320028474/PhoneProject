@@ -6,5 +6,5 @@ public class MyApplicationInfo {
 	public static final String CHANNEL_ID = "TEST";
 	public static final String PACKAGE_NAME = "com.example.beautyphone";
 	public static final String VERSON_ID = "1.0.0";
-
+	public static final String BMOB_SMS_APPID = "4a7a38e788d822c10bbe985f5280ddde";
 }

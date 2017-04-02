@@ -22,7 +22,6 @@ public class BeautyPhoneDbAction {
 		return dbAction;
 	}
 
-
 	public int haveNewCallLog(FYCallLogPushRequest request){
 		Long duration = Long.parseLong(request.getCallDuration());
 		if(duration == 0){
@@ -40,6 +39,39 @@ public class BeautyPhoneDbAction {
 		DButil butil = new DButil();
 		int row = butil.dbUpdata(sqlOpration);
 		return row;
+	}
+
+	/**
+	 * 0:用户已存在,1:可以注册,2:未知错误
+	 * @param number
+	 * @return
+	 */
+	public int identIsCanRegist(String number){
+		String sql = "select 1 from user where UserAccount='" + number + "' limit 1";
+		DButil butil = new DButil();
+		ResultSet resultSet = butil.dbQuery(sql);
+		try {
+			if(resultSet.next()){
+				String isCanRegist = resultSet.getString("1");
+				if(isCanRegist.isEmpty()){
+					//System.out.println("不存在用户,可注册");
+					return 1;
+				}else if(isCanRegist.equals("1")){
+					//System.out.println("用户已存在");
+					return 0;
+				}else{
+					//System.out.println("可以注册");
+					return 1;
+				}
+			}else{
+				//System.out.println("不存在用户,可注册");
+				return 1;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return 2;
+		}
 	}
 
 	public int addRegistUser(Map<String, Object> map){

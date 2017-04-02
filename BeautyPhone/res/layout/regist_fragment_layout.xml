@@ -35,11 +35,12 @@
                 android:layout_marginLeft="5dp"
                 android:background="@null"
                 android:hint="手机号"
+                android:inputType="number"
                 android:textColor="#929292"
                 android:textColorHint="#e8e8e8" />
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/loginactivity_password_rootview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,6 +52,7 @@
             android:gravity="center_vertical" >
 
             <ImageView
+                android:id="@+id/identy_code_icon"
                 android:layout_width="27dp"
                 android:layout_height="27dp"
                 android:layout_marginLeft="5dp"
@@ -62,23 +64,27 @@
                 android:layout_width="80dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/identy_code_icon"
                 android:background="@null"
                 android:hint="验证码"
-                android:inputType="numberPassword|textPassword"
+                android:inputType="number"
+                android:maxLength="6"
                 android:maxLines="1"
                 android:textColor="#929292"
                 android:textColorHint="#e8e8e8" />
 
             <TextView
                 android:id="@+id/regist_getidentcode"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
                 android:gravity="right"
                 android:text="获取验证码"
                 android:textColor="#1388ea"
                 android:textSize="@dimen/text_size_m" />
-        </LinearLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/loginactivity_idendity_rootview"
@@ -105,13 +111,14 @@
                 android:layout_height="35dp"
                 android:layout_marginLeft="5dp"
                 android:background="@null"
-                android:hint="密码"
+                android:hint="至少6位数密码"
                 android:inputType="numberPassword|textPassword"
                 android:textColor="#929292"
                 android:textColorHint="#e8e8e8" />
         </LinearLayout>
 
         <Button
+            android:id="@+id/loginactivity_regist_button"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_below="@+id/loginactivity_idendity_rootview"
